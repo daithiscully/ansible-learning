@@ -1,0 +1,10 @@
+---
+- hosts: my-servers
+  become: true
+  tasks:
+    - name: Install required packages
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - php7.0-cli
+        - nginx
+        - mysql-server-5.7

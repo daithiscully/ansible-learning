@@ -1,0 +1,2 @@
+[my-servers]
+172.31.5.62 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/inis_aws_2
